@@ -3,6 +3,7 @@ import './App.css';
 import FormatName from './components/formatName';
 import GetGreeting from './components/GetGreeting';
 import ReactDOM from 'react-dom'
+import Welcome from './components/Welcome';
 
 function App() {
   // 태그문법으로 변수선언이 가능하다
@@ -16,6 +17,7 @@ function App() {
     {element}
     <FormatName/>
     <GetGreeting/>
+    <Welcome/>
     </div>
     
   );
