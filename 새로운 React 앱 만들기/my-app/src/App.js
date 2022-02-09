@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import FormatName from './components/formatName';
+import GetGreeting from './components/GetGreeting';
+import ReactDOM from 'react-dom'
 
 function App() {
+  // 태그문법으로 변수선언이 가능하다
+  // const name = `josh Perez`
+  // const element = <h1>Hello, {name}</h1>
+
+  const element = <a href="https://www.reactjs.org"> link </a>
+  // const element = <img src={user.avatarUrl}></img>;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {element}
+    <FormatName/>
+    <GetGreeting/>
     </div>
+    
   );
+  
 }
+// function tick() {
+//   const element = (
+//     <div>
+//       <h1>Hello, world!</h1>
+//       <h2>It is {new Date().toLocaleTimeString()}</h2>
+//     </div>
+//   );
+//   ReactDOM.render(element, document.getElementById('root'));
+// }
+// setInterval(tick, 1000);
 
 export default App;
